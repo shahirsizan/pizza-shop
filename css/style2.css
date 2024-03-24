@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap"):
-	root {
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap");
+
+root {
 	--red: #e74c3c;
 	--black: #333;
 	--white: #fff;
@@ -29,17 +30,76 @@
 	background-color: transparent;
 }
 
+::-webkit-scrollbar-thumb { 
+	background-color: var(--red);
+}
 
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 7.5rem;
+}
 
+body {
+	background: var(--light-bg);
+	overflow-x: hidden;
+}
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 7.5rem;
+section {
+	padding: 2rem;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--white);
+	box-shadow: var(--box-shadow);
+	z-index: 1000;
+}
+
+.header .flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.header .flex .logo {
+	font-size: 2.5rem;
+	color: var(--black);
+}
+
+.header .flex .navbar a {
+	margin: 0 1rem;
+	font-size: 2.2rem;
+	color: var(--black);
+}
+
+.header .flex .navbar a:hover {
+	text-decoration: underline;
+	color: var(--red);
+}
+
+.header .flex .icons div {
+	font-size: 2.5rem;
+	color: var(--light-color);
+	cursor: pointer;
+	margin-left: 1.7rem;
+}
+
+.header .flex .icons div:hover{
+    color:var(--red);
  }
 
- body{
-    background: var(--light-bg);
-    overflow-x: hidden;
+ .header .flex .icons div span{
+    font-size: 2rem;
+ }
+
+ #menu-btn{
+    display: none;
  }
