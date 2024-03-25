@@ -208,7 +208,7 @@ section{
 
 .user-account .flex form{
    flex:1 1 40rem;
-   border-radius: .5rem;
+   border-radius: 1rem;
    padding:2rem;
    background-color: var(--light-bg);
 }
