@@ -52,23 +52,23 @@ section {
 	max-width: 1200px;
 }
 
-.btn{
-    display: block;
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: .5rem;
-    padding:1rem 3rem;
-    font-size: 2rem;
-    color:var(--white);
-    background-color: var(--red);
-    cursor: pointer;
-    text-transform: capitalize;
-    text-align: center;
- }
- 
- .btn:hover{
-    background-color:var(--black);
- }
+.btn {
+	display: block;
+	width: 100%;
+	margin-top: 1rem;
+	border-radius: 0.5rem;
+	padding: 1rem 3rem;
+	font-size: 2rem;
+	color: var(--white);
+	background-color: var(--red);
+	cursor: pointer;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.btn:hover {
+	background-color: var(--black);
+}
 
 .header {
 	position: fixed;
@@ -122,19 +122,20 @@ section {
 	display: none;
 }
 
-.user-account{
-    position: fixed;
-    top:0; right:-110%;
-    width: 100%;
-    z-index: 1100;
-    background-color: var(--white);
-    height: 100vh;
-    overflow-y: scroll;
- }
+.user-account {
+	position: fixed;
+	top: 0;
+	right: -110%;
+	width: 100%;
+	z-index: 1100;
+	background-color: var(--white);
+	height: 100vh;
+	overflow-y: scroll;
+}
 
-.user-account.active{
-    right: 0;
- }
+.user-account.active {
+	right: 0;
+}
 
 .user-account #close-account {
 	text-align: right;
@@ -226,6 +227,64 @@ section {
 	color: var(--black);
 }
 
+.my-orders {
+	position: fixed;
+	top: 0;
+	right: -110%;
+	width: 35rem;
+	z-index: 1100;
+	background-color: var(--light-bg);
+	border-left: var(--border);
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+.my-orders.active{
+    right: 0%;
+ }
+
+.my-orders #close-orders {
+	text-align: right;
+	margin-bottom: 2.5rem;
+}
+
+.my-orders #close-orders span{
+    cursor: pointer;
+    font-size: 2.5rem;
+    color:var(--red);
+    text-decoration: underline;
+ }
+
+ .my-orders #close-orders span:hover{
+    color:var(--black);
+ }
+
+ .my-orders .title{
+    text-align: center;
+    margin-bottom: 1rem;
+    color:var(--black);
+    font-size: 3rem;
+ }
+
+ .my-orders .box{
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding:1rem 2rem;
+    box-shadow: var(--box-shadow);
+    margin:2rem 0;
+ }
+
+ .my-orders .box p{
+    margin:1rem 0;
+    font-size: 1.3rem;
+    color:var(--light-color);
+    line-height: 1.3;
+ }
+
+ .my-orders .box p span{
+    color:var(--black);
+ }
+
 /* MEDIA QUERIES  */
 /* MEDIA QUERIES  */
 /* MEDIA QUERIES  */
@@ -269,4 +328,10 @@ section {
 	html {
 		font-size: 50%;
 	}
+
+    .my-orders{
+        width: 100%;
+        border-left: 0;
+     }
 }
+

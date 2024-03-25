@@ -14,8 +14,19 @@ document.querySelector("#close-account").onclick = () => {
 	account.classList.remove("active");
 };
 
+// Show/hide functionality for ORDERS section
+// Show/hide functionality for ORDERS section
+let myOrders = document.querySelector(".my-orders");
 
+document.querySelector("#order-btn").onclick = () => {
+	myOrders.classList.add("active");
+};
 
+document.querySelector("#close-orders").onclick = () => {
+	myOrders.classList.remove("active");
+};
+// End of Show/hide functionality for ORDERS section
+// End of Show/hide functionality for ORDERS section
 
 window.onscroll = () => {
 	navbar.classList.remove("active");
