@@ -226,6 +226,11 @@ section {
 	font-size: 1.8rem;
 	color: var(--black);
 }
+/* user-account css ends here  */
+/* user-account css ends here  */
+/* user-account css ends here  */
+/* user-account css ends here  */
+/* user-account css ends here  */
 
 .my-orders {
 	position: fixed;
@@ -239,51 +244,162 @@ section {
 	overflow-y: scroll;
 }
 
-.my-orders.active{
-    right: 0%;
- }
+.my-orders.active {
+	right: 0%;
+}
 
 .my-orders #close-orders {
 	text-align: right;
 	margin-bottom: 2.5rem;
 }
 
-.my-orders #close-orders span{
-    cursor: pointer;
-    font-size: 2.5rem;
-    color:var(--red);
-    text-decoration: underline;
- }
+.my-orders #close-orders span {
+	cursor: pointer;
+	font-size: 2.5rem;
+	color: var(--red);
+	text-decoration: underline;
+}
 
- .my-orders #close-orders span:hover{
-    color:var(--black);
- }
+.my-orders #close-orders span:hover {
+	color: var(--black);
+}
 
- .my-orders .title{
-    text-align: center;
-    margin-bottom: 1rem;
-    color:var(--black);
-    font-size: 3rem;
- }
+.my-orders .title {
+	text-align: center;
+	margin-bottom: 1rem;
+	color: var(--black);
+	font-size: 3rem;
+}
 
- .my-orders .box{
-    background-color: var(--white);
-    border-radius: .5rem;
-    padding:1rem 2rem;
-    box-shadow: var(--box-shadow);
-    margin:2rem 0;
- }
+.my-orders .box {
+	background-color: var(--white);
+	border-radius: 0.5rem;
+	padding: 1rem 2rem;
+	box-shadow: var(--box-shadow);
+	margin: 2rem 0;
+}
 
- .my-orders .box p{
-    margin:1rem 0;
-    font-size: 1.3rem;
-    color:var(--light-color);
-    line-height: 1.3;
- }
+.my-orders .box p {
+	margin: 1rem 0;
+	font-size: 1.3rem;
+	color: var(--light-color);
+	line-height: 1.3;
+}
 
- .my-orders .box p span{
-    color:var(--black);
- }
+.my-orders .box p span {
+	color: var(--black);
+}
+/* my-order css ends here  */
+/* my-order css ends here  */
+/* my-order css ends here  */
+/* my-order css ends here  */
+/* my-order css ends here  */
+
+.shopping-cart {
+	position: fixed;
+	top: 0;
+	right: -110%;
+	width: 35rem;
+	z-index: 1100;
+	background-color: var(--light-bg);
+	border-left: var(--border);
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+.shopping-cart.active {
+	right: 0;
+}
+
+.shopping-cart #close-cart {
+	text-align: right;
+	margin-bottom: 2.5rem;
+}
+
+.shopping-cart #close-cart span {
+	cursor: pointer;
+	font-size: 2.5rem;
+	color: var(--red);
+	text-decoration: underline;
+}
+
+.shopping-cart #close-cart span:hover {
+	color: var(--black);
+}
+
+.shopping-cart .box {
+	display: flex;
+	position: relative;
+	align-items: center;
+	gap: 1.5rem;
+	border-radius: 0.5rem;
+	box-shadow: var(--box-shadow);
+	padding: 1.5rem;
+	background-color: var(--white);
+	margin: 1.7rem 0;
+}
+
+.shopping-cart .box .fa-times {
+	position: absolute;
+	top: 1.2rem;
+	right: 1.2rem;
+	font-size: 1.8rem;
+	cursor: pointer;
+	color: var(--red);
+}
+
+.shopping-cart .box .fa-times:hover {
+	color: var(--black);
+}
+
+.shopping-cart .box img {
+	width: 7rem;
+}
+
+.shopping-cart .box .content p {
+	font-size: 1.8rem;
+	color: var(--light-color);
+}
+
+.shopping-cart .box .content p span {
+	color: var(--red);
+}
+
+.shopping-cart .box .content form {
+	margin-top: 1.5rem;
+	display: flex;
+	gap: 1rem;
+}
+
+.shopping-cart .box .content form .qty {
+	border: var(--border);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-size: 1.6rem;
+	color: var(--black);
+	width: 8rem;
+}
+
+.shopping-cart .box .content form .fa-edit {
+	width: 4.5rem;
+	font-size: 1.4rem;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	background-color: var(--light-bg);
+	color: var(--black);
+}
+
+.shopping-cart .box .content form .fa-edit:hover {
+	background-color: var(--black);
+	color: var(--white);
+}
+/* shopping-cart css ends here  */
+/* shopping-cart css ends here  */
+/* shopping-cart css ends here  */
+/* shopping-cart css ends here  */
+/* shopping-cart css ends here  */
+
+
 
 /* MEDIA QUERIES  */
 /* MEDIA QUERIES  */
@@ -329,9 +445,8 @@ section {
 		font-size: 50%;
 	}
 
-    .my-orders{
-        width: 100%;
-        border-left: 0;
-     }
+	.my-orders {
+		width: 100%;
+		border-left: 0;
+	}
 }
-

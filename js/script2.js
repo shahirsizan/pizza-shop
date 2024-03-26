@@ -27,6 +27,25 @@ document.querySelector("#close-orders").onclick = () => {
 };
 // End of Show/hide functionality for ORDERS section
 // End of Show/hide functionality for ORDERS section
+// End of Show/hide functionality for ORDERS section
+// End of Show/hide functionality for ORDERS section
+// End of Show/hide functionality for ORDERS section
+
+let cart = document.querySelector(".shopping-cart");
+
+document.querySelector("#cart-btn").onclick = () => {
+	cart.classList.add("active");
+};
+
+document.querySelector("#close-cart").onclick = () => {
+	cart.classList.remove("active");
+};
+
+// End of Show/hide functionality for shopping-cart section
+// End of Show/hide functionality for shopping-cart section
+// End of Show/hide functionality for shopping-cart section
+// End of Show/hide functionality for shopping-cart section
+// End of Show/hide functionality for shopping-cart section
 
 window.onscroll = () => {
 	navbar.classList.remove("active");
