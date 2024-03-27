@@ -21,6 +21,8 @@
 	transition: 0.2s linear;
 }
 
+
+
 ::-webkit-scrollbar {
 	width: 1rem;
 	height: 0.5rem;
@@ -51,6 +53,13 @@ section {
 	margin: 0 auto;
 	max-width: 1200px;
 }
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color:var(--black);
+ }
 
 .btn {
 	display: block;
@@ -481,6 +490,22 @@ section {
 /* home-bg ends here  */
 /* home-bg ends here  */
 /* home-bg ends here  */
+
+.about .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap:1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+ }
+
+ .about .box-container .box{
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding:2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+ }
 
 
 
