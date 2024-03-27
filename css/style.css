@@ -430,7 +430,7 @@ section{
 .home-bg .home .slide-container .slide .content{
    flex:1 1 40rem;
    text-align: center;
-   animation: fadeLeft .4s linear;
+   
 }
 
 .home-bg .home .slide-container .slide .content h3{
@@ -440,6 +440,7 @@ section{
    font-size: 7.5rem;
    text-shadow: var(--box-shadow);
    line-height: 1;
+   animation: fadeLeft .4s linear;
 }
 
 .home-bg .home .slide-container .slide .content .fa-angle-left,

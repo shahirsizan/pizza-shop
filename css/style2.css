@@ -399,6 +399,18 @@ section {
 /* shopping-cart css ends here  */
 /* shopping-cart css ends here  */
 
+@keyframes fadeLeft{
+    0%{
+       transform: translateX(1rem);
+    }
+ }
+ 
+ @keyframes fadeRight{
+    0%{
+       transform: translateX(-1rem);
+    }
+ }
+
 .home-bg {
 	background: url(../images/home-bg.jpg) no-repeat;
 	background-size: cover;
@@ -422,7 +434,7 @@ section {
 
 .home-bg .home .slide-container .slide .image {
 	flex: 1 1 40rem;
-	animation: fadeRight 0.4s linear;
+	animation: fadeRight 0.3s linear;
 }
 
 .home-bg .home .slide-container .slide .image img {
@@ -432,16 +444,17 @@ section {
 .home-bg .home .slide-container .slide .content {
 	flex: 1 1 40rem;
 	text-align: center;
-	animation: fadeLeft 0.8s linear;
+	
 }
 
 .home-bg .home .slide-container .slide .content h3 {
 	color: var(--white);
 	margin-bottom: 3rem;
 	text-transform: capitalize;
-	font-size: 7.5rem;
+	font-size: 7rem;
 	text-shadow: var(--box-shadow);
 	line-height: 1;
+    animation: fadeLeft 0.3s linear;
 }
 
 .home-bg .home .slide-container .slide .content .fa-angle-left,
@@ -463,6 +476,13 @@ section {
    background-color: var(--red);
    color:var(--white);
 }
+/* home-bg ends here  */
+/* home-bg ends here  */
+/* home-bg ends here  */
+/* home-bg ends here  */
+/* home-bg ends here  */
+
+
 
 /* MEDIA QUERIES  */
 /* MEDIA QUERIES  */
@@ -501,6 +521,10 @@ section {
 		display: block;
 		margin: 2rem;
 	}
+
+    .home-bg .home .slide-container .slide .content h3{
+        font-size: 4rem;
+      }
 }
 
 @media (max-width: 450px) {
