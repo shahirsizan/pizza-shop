@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
 
 :root{
    --red:#e74c3c;
@@ -208,7 +208,7 @@ section{
 
 .user-account .flex form{
    flex:1 1 40rem;
-   border-radius: 1rem;
+   border-radius: .5rem;
    padding:2rem;
    background-color: var(--light-bg);
 }
@@ -430,7 +430,7 @@ section{
 .home-bg .home .slide-container .slide .content{
    flex:1 1 40rem;
    text-align: center;
-   
+   animation: fadeLeft .4s linear;
 }
 
 .home-bg .home .slide-container .slide .content h3{
@@ -440,7 +440,6 @@ section{
    font-size: 7.5rem;
    text-shadow: var(--box-shadow);
    line-height: 1;
-   animation: fadeLeft .4s linear;
 }
 
 .home-bg .home .slide-container .slide .content .fa-angle-left,
